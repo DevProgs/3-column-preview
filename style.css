@@ -22,6 +22,52 @@
   --light-gray: hsl(0, 0%, 95%);
 }
 
-body {
-  font-family: 'Lexend Deca', sans-serif;;
+
+.container {
+  margin-inline: auto;
+  padding: .725em;
+  max-width: var(--mobile);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 2em;
+  color: var(--light-gray);
+}
+
+.card:nth-child(1) {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.card:nth-child(3) {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.card--image {
+  max-width: 50px;
+}
+
+.card--title {
+  font-family: 'Big Shoulders Display', sans-serif;
+}
+
+.card--btn {
+  padding: .725em 2em;
+  border-radius: 10px;
+  align-self: start;
+}
+
+.sedan {
+  background: var(--bright-orange);
+}
+
+.suv {
+  background: var(--dark-cyan);
+}
+
+.luxury {
+  background: var(--very-dark-cyan);
 }
