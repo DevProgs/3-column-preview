@@ -23,16 +23,21 @@
 }
 
 
-.container {
+main {
   margin-inline: auto;
-  padding: .725em;
-  max-width: var(--mobile);
+  max-width: var(--desktop);
+  padding: 1em;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  padding: 1em 2em;
+  padding: 2em;
 }
 
 .card:nth-child(1) {
@@ -50,7 +55,7 @@
 }
 
 .card--image {
-  margin: 1em 0;
+  margin: .75em 0;
 }
 
 .card--title {
@@ -62,13 +67,18 @@
 
 .card--description {
   color: var(--transparent-white);
+  line-height: 1.4;
   margin-bottom: .75em;
 }
 
 .card--btn {
   padding: .725em 2em;
-  border-radius: 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  background: black;
+  border: 2px solid white;
   align-self: start;
+  background: white;
 }
 
 .sedan {
