@@ -49,13 +49,20 @@
   max-width: 50px;
 }
 
+.card--image {
+  margin: 1em 0;
+}
+
 .card--title {
   font-family: 'Big Shoulders Display', sans-serif;
+  font-size: 2rem;
   color: var(--light-gray);
+  margin-bottom: .75em;
 }
 
 .card--description {
   color: var(--transparent-white);
+  margin-bottom: .75em;
 }
 
 .card--btn {
