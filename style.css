@@ -22,6 +22,9 @@
   --light-gray: hsl(0, 0%, 95%);
 }
 
+body {
+  background: lightgray;
+}
 
 main {
   margin-inline: auto;
@@ -37,7 +40,7 @@ main {
 .card {
   display: flex;
   flex-direction: column;
-  padding: 2em;
+  padding: 2.5em;
 }
 
 .card:nth-child(1) {
@@ -91,4 +94,28 @@ main {
 
 .luxury {
   background: var(--very-dark-cyan);
+}
+
+
+@media (min-width: 800px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card:nth-child(1) {
+  border-top-right-radius: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.card:nth-child(3) {
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 10px;
+}
+
+.card--description {
+  margin-bottom: 4em;
+}
+
 }
