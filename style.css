@@ -26,6 +26,11 @@ body {
   background: lightgray;
 }
 
+a,
+.card--description {
+  font-family: 'Lexend Deca', sans-serif;
+}
+
 main {
   margin-inline: auto;
   max-width: var(--desktop);
@@ -39,7 +44,7 @@ main {
 
 .card {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   padding: 2.5em;
 }
 
@@ -71,7 +76,7 @@ main {
 .card--description {
   color: var(--transparent-white);
   line-height: 1.4;
-  margin-bottom: .75em;
+  margin-bottom: 2em;
 }
 
 .card--btn {
@@ -88,18 +93,52 @@ main {
   background: var(--bright-orange);
 }
 
+.sedan > a {
+  color: var(--bright-orange)
+}
+
+.sedan > 
+.card--btn:hover,
+.card--btn:active {
+  background: var(--bright-orange);
+  color: white;
+}
+
 .suv {
   background: var(--dark-cyan);
+}
+
+.suv > a {
+  color: var(--dark-cyan);
+}
+
+.suv > 
+.card--btn:hover,
+.card--btn:active {
+  background: var(--dark-cyan);
+  color: white;
 }
 
 .luxury {
   background: var(--very-dark-cyan);
 }
 
+.luxury > a {
+  color: var(--very-dark-cyan);
+}
 
-@media (min-width: 800px) {
+.luxury > 
+.card--btn:hover,
+.card--btn:active {
+  background: var(--very-dark-cyan);
+  color: white;
+}
+
+
+@media (min-width: 700px) {
   .container {
     grid-template-columns: repeat(3, 1fr);
+
   }
 
   .card:nth-child(1) {
@@ -114,8 +153,11 @@ main {
   border-bottom-right-radius: 10px;
 }
 
+.card--image {
+  margin-bottom: 2em;
+}
+
 .card--description {
   margin-bottom: 4em;
 }
-
 }
